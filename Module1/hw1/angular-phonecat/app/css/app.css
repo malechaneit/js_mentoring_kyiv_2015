@@ -133,3 +133,6 @@ h1 {
 .title {
     text-align: center;
 }
+.wish-list {
+    list-style: none;
+}

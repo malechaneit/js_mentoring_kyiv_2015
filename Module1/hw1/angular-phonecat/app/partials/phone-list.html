@@ -14,7 +14,7 @@
         <ul class="wish-list">
             <li class="wish-list-item" ng-repeat="item in wishList">
                 {{item}}
-                <span ng-click="removeFromWishList(phone.name)" class="remove" title="Remove from wish list">X</span>
+                <span ng-click="removeFromWishList(item)" class="remove" title="Remove from wish list">X</span>
             </li>
         </ul>
     </div>
@@ -30,7 +30,7 @@
           <a href="#/phones/{{phone.id}}">{{phone.name}}</a>
 
           <p>{{phone.snippet}}
-          <div class="heart" ng-class="" ng-click="isInWishList(phone.name)"></div>
+          <div class="heart" ng-class="phone.isInWishList ? 'active': ''" ng-click="isInWishList(phone.name)"></div>
         </li>
       </ul>
 
