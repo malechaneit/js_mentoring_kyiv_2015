@@ -124,3 +124,12 @@ h1 {
     color: red;
     font-size: 12px;
 }
+.side-block {
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,.2);
+}
+.title {
+    text-align: center;
+}
